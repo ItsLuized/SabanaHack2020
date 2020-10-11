@@ -1,8 +1,14 @@
 import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+
+/* TSX Pages */
+import Home from './pages/home/Home';
+import Splash from './pages/Splash';
+import Profesional from "./pages/profesional/Profesional"
+import Scan from "./pages/scan/Scan"
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -25,10 +31,12 @@ import './theme/variables.css';
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
+    <IonReactRouter forceRefresh>
       <IonRouterOutlet>
-        <Route path="/home" component={Home} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
+        <Route path="/" component={Splash} exact={true} />
+        <Route path="/home" component={Home} />
+        <Route path="/profesional" component={Profesional} />
+        <Route path="/scan" component={Scan} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

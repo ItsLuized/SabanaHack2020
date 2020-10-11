@@ -1,0 +1,23 @@
+.white {
+  --ion-background-color: #fff;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.verticalCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.img {
+  align-content: center;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+}
