@@ -1,0 +1,20 @@
+.blue {
+  --ion-background-color: #23356c;
+}
+
+.bigMar {
+  margin-top: 10vh;
+}
+
+.input {
+  --background: white;
+  --color: black;
+}
+
+.ingresar {
+  margin-top: 15vh;
+}
+
+.button {
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+.white {
+  --ion-background-color: #fff;
+}
+
+.title {
+  text-align: center;
+  color: #23356c;
+}
+
+.blueBottom {
+  width: 100%;
+  height: 5vh;
+  background-color: #23356c;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.blueTop {
+  width: 100%;
+  height: 5vh;
+  background-color: #23356c;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.space {
+  height: 50px;
+}
+
+.button {
+  --background: #23356c;
+}
+
+.marginTitle {
+  margin-top: 7vh !important;
+}
