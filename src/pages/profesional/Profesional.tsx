@@ -8,11 +8,19 @@ const Profesional: React.FC = () => {
   const history = useHistory();
   const [username, setUsername] = useState<string>();
   const [password, setPassword] = useState<string>();
+  const [showAlert, setShowAlert] = useState(false);
 
   function logInProfesional(){
     if(username === "profesional" && password === "1234"){
       console.log(username + " " + password);
+      setUsername("");
+      setPassword("");
       history.push("/scan")
+    }
+    else {
+    setShowAlert(true);
+    setUsername("");
+    setPassword("");
     }
   }
 
@@ -43,6 +51,13 @@ const Profesional: React.FC = () => {
             </IonCol>
           </IonRow>
         </IonGrid>
+        <IonAlert
+          isOpen={showAlert}
+          onDidDismiss={() => setShowAlert(false)}
+          header={'Error'}
+          message={'Usuario o contraseña incorrecto'}
+          buttons={['OK']}
+        />
       </IonContent>
     </IonPage>
   );
