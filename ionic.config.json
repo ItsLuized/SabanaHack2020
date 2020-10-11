@@ -1,0 +1,7 @@
+{
+  "name": "SabanaHack2020",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
